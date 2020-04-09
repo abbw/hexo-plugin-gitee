@@ -6,51 +6,52 @@
 
 ## 效果
 
-![gitalk-use-preview.png](gitalk-use-preview.png)
+![gitee-preview.png](gitee-preview.png)
 
 ## 用法
 
 ### 1、 更新 `_config.yml` 配置文件
 
-在 `_config.yml` 配置文件中,配置 `gitee` 插件相关信息,详情见 [gitalk](https://github.com/gitalk/gitalk).
+在 `_config.yml` 配置文件中,配置 `gitee` 插件相关信息,详情见 [码云](https://gitee.com/abbw).
 
 ```yml
-gitalk:
-    clientID: GitHub Application Client ID
-    clientSecret: GitHub Application Client Secret
-    repo: GitHub repo
-    owner: GitHub repo owner
+giteement:
+    # 码云账号ID
+    owner: ''
+    # 存储评论的 repo
+    repo: ''
+    # 应用回调地址
+    backcall_uri: ''
+    # 不能更改(网上开源项目https://github.com/Rob--W/cors-anywhere作者提供的专门用来跨域服务器的配置)
+    oauth_uri: 'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token'
+    oauth: {
+        # Client ID
+        client_id: '',
+        # Client Secret
+        client_secret: ''
+    }
 ```
 
-> 注意: 前往 [gitalk](https://github.com/gitalk/gitalk) 申请开通 `gitalk` 功能后,**一定要替换成自己的相关配置**!
+> 注意: 前往 [码云](https://gitee.com/abbw) 申请开通,**一定要替换成自己的相关配置**!
 
 其中,主要配置参数含义如下: 
 
-- **clientID** `String` 
+- **client_id** `String` 
 
-  **必须**. GitHub Application Client ID.
+  **必须**. Application Client ID.
 
-- **clientSecret** `String` 
+- **client_secret** `String` 
 
-  **必须**. GitHub Application Client Secret.
+  **必须**. Application Client Secret.
 
 - **repo** `String` 
 
-  **必须**. GitHub repository.
+  **必须**. 码云 repository.
 
 - **owner** `String` 
 
-  **必须**. GitHub repository 所有者，可以是个人或者组织。
+  **必须**. 码云 repository 所有者，可以是个人或者组织。
 
-- **admin** `Array` 
-
-  **必须**. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
-
-- **distractionFreeMode** `Boolean` 
-  
-  Default: false。
-
-  类似Facebook评论框的全屏遮罩效果.
 
 ### 2、运行 hexo 相关命令
 
