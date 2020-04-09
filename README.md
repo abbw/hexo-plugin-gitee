@@ -10,7 +10,7 @@
 
 ## 用法
 
-### #1 更新 `_config.yml` 配置文件
+### 1、 更新 `_config.yml` 配置文件
 
 在 `_config.yml` 配置文件中,配置 `gitee` 插件相关信息,详情见 [gitalk](https://github.com/gitalk/gitalk).
 
@@ -52,7 +52,7 @@ gitalk:
 
   类似Facebook评论框的全屏遮罩效果.
 
-### #2 - 运行 hexo 相关命令
+### 2、运行 hexo 相关命令
 
 - 运行 `npm install` 命令安装到本地项目
 
