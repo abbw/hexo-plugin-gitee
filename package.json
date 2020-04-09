@@ -1,0 +1,26 @@
+{
+  "name": "hexo-plugin-gitee",
+  "version": "1.0.0",
+  "description": "Hexo 整合 gitee 组件实现博客评论功能",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abbw/hexo-plugin-gitee.git"
+  },
+  "keywords": [
+    "hexo-plugin-gitee",
+    "gitee",
+    "gitment",
+    "comment",
+    "issues",
+    "hexo"
+  ],
+  "author": {
+    "name": "笨蛋海绵",
+    "email": "1037886804@qq.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}
